@@ -15,23 +15,22 @@ void fib(int n)
 	printf("%d ", fn);
 	return fib(n - 1);
 }
-// function that handles the first two terms and calls the
-// recursive function
+
 void printFib(int n)
 {
-	// when the number of terms is less than 1
+	//n=0
 	if (n < 1) {
 		printf("Invalid number of terms\n");
 	}
-	// when the number of terms is 1
+	//n=1
 	else if (n == 1) {
 		printf("%d ", 0);
 	}
-	// when the number of terms is 2
+	//n=2
 	else if (n == 2) {
 		printf("%d %d", 0, 1);
 	}
-	// number of terms greater than 2
+	//n>2
 	else {
 		printf("%d %d ", 0, 1);
 		fib(n);
